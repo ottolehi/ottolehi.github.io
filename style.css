@@ -1,24 +1,36 @@
-<!-- Grid from https://www.w3schools.com/css/css_grid.asp -->
+
+/* Grid from https://www.w3schools.com/css/css_grid.asp */
 .header { grid-area: header; }
-.item2 { grid-area: menu; }
-.item3 { grid-area: main; }
-.item4 { grid-area: right; }
-.item5 { grid-area: footer; }
+.Menu { grid-area: menu; }
+.Main { grid-area: main; }
+.Right { grid-area: right; }
+.Footer { grid-area: footer; }
 
 .grid-container {
   display: grid;
   grid-template-areas:
     'header header header header header header'
-    'menu main main main right right'
+    'menu main main main main right'
     'menu footer footer footer footer footer';
-  gap: 10px;
-  background-color: #2196F3;
+  gap: 3px;
+  background-color: #ced5ba;
   padding: 10px;
 }
 
 .grid-container * {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgb(8, 73, 8);
   text-align: center;
-  padding: 20px 0;
+  padding: 0px 0;
   font-size: 30px;
+  font-family: Helvetica;
+  color:beige
+  
+}
+
+a:hover {
+color: rgb(170, 166, 166);
+font-size: 32px;
+}
+a:active {
+color: rgb(154, 152, 152);
 }
